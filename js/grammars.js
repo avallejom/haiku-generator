@@ -7,8 +7,8 @@ var grammars = {
 	
 	
 	haikus : {
-        quien1 : ["Cifuentes", "Cristina"],
-		que1 : ["sabe", "dice",  "tiene", "pone","cuelga"],
+        quien1 : ["Cifuentes", "Cristina","Botella","Carmena"],
+		que1 : ["sabe", "dice",  "tiene", "pone","cuelga","muestra","lleva", "manda"],
 		
 		abre1 : ["#quien1# #que1#."],
 		
@@ -20,8 +20,7 @@ var grammars = {
 		quien3 : ["Barcenas"],
 		que3 : [ "calla","fijo","todo","guarda","tiene","lleva","suizo"],
 		
-		quienN : ["Carrero"], /*censurado*/
-		queN : [ "sube"],
+	
 		
 		abre3 : ["#quien3# #que3#."],
 		
@@ -37,10 +36,12 @@ var grammars = {
 		
 		abre5 : ["#quien5# #que5#."],
 		
+		quienN : ["Carrero"], /*censurado*/
+		queN : [ "sube"],
 		
 		
         mquien1 : ["La gente", "El pueblo","El diario","La Uni"],
-		mque1 : ["se sorprende", "se informa","con noticias"],
+		mque1 : ["se sorprende", "con informes","con noticias"],
 		medio1 : ["#mquien1# #mque1#"],
 		
 		mquien2 : ["Apoyo","Palabras","Respaldo" ],
@@ -50,7 +51,7 @@ var grammars = {
 		mque2b : ["Vendetta","Venganza","aparca"],
 		
 		
-		medio2 : ["#mquien2# #mque2#", "#mquien2b# #mque2b#" ],
+		medio2 : ["#mquien2# #mque2#", "#mquien2b# #mque2b#", "el mercado amigo" ],
 		
 		 mquien3 : ["Sospechan" ],
 		mque3 : ["una traición","de venganza","que hay muchos","de intrigas"],
@@ -72,11 +73,17 @@ var grammars = {
 		conclusion11 : "y tu tranquilo",
 		conclusion12 : "nadie dimite",
 		conclusion13 : "loco del puente",
+		
+		conclusion14 : "sin Urdangarín",
+		conclusion15 : "dinero tuyo",
+		conclusion16 : "Rato malandrín",
+		conclusion17 : "es democracia",
+		
 
 		
-        p1 :[ "#abre1#","#abre2#","#abre3#","#abre4#"],
+        p1 :[ "#abre1#","#abre2#","#abre3#","#abre4#","#abre5#"],
         p2 : ["#medio1#","#medio2#","#medio3#"],
-        p3 : ["#conclusion1#","#conclusion2#","#conclusion3#","#conclusion4#","#conclusion5#","#conclusion6#","#conclusion7#","#conclusion8#","#conclusion9#","#conclusion10#","#conclusion11#","#conclusion12#"],
+        p3 : ["#conclusion1#","#conclusion2#","#conclusion3#","#conclusion4#","#conclusion5#","#conclusion6#","#conclusion7#","#conclusion8#","#conclusion9#","#conclusion10#","#conclusion11#","#conclusion12#"  ,"#conclusion13#","#conclusion14#","#conclusion15#","#conclusion16#","#conclusion17#",   ],
 		
 		haiku1 :"#p1#<br/>#p2#,<br/>#p3#.",
 		
